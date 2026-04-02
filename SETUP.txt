@@ -1,0 +1,36 @@
+Tableau instead of Power BI (Mac-friendly)
+========================================
+
+Your data is already in:
+  exports/sales_fact_denormalized.csv
+
+Install Tableau (choose one)
+----------------------------
+- Tableau Public (free; workbooks you publish are visible on the web):
+  https://public.tableau.com/en-us/s/download
+
+- Tableau Desktop (trial or licensed; can keep workbooks private):
+  https://www.tableau.com/products/desktop
+
+Optional (Mac): Homebrew
+  brew install --cask tableau-public
+
+Connect to the CSV
+-----------------
+1. Open Tableau > Connect > To a File > Text file
+2. Pick: exports/sales_fact_denormalized.csv
+3. Sheet 1: drag fields to Rows/Columns or use Show Me for charts.
+
+Suggested views
+---------------
+- Line: order_date (day or month) vs SUM(line_revenue)
+- Bar: category vs SUM(line_revenue)
+- Map or bar: region vs SUM(line_revenue)
+- Filters: segment, category, region
+
+Refresh after re-running the pipeline
+-----------------------------------
+Run:  python scripts/run_pipeline.py
+Then in Tableau: Data > your data source > Refresh
+
+Save your workbook as e.g. sales_dashboard.twbx in this folder if you use Desktop or Public (local file + publish when ready).
