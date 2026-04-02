@@ -67,15 +67,4 @@ Open the analytical queries in `sql/02_analytical_queries.sql` for:
 - Sales by region and segment
 - Customer ranking by lifetime value
 
-## GitHub / Portfolio Notes
-
-- Publishing to Tableau Public is optional.
-- If you publish, you can add the Public link below.
-
-## Optional: Add Your Results
-
-You can paste these into the README after you export screenshots/PDFs:
-
-- Dashboard screenshot: `tableau/<your-exported-image>.png`
-- Public link (if published): `https://<your-tableau-link>`
 
