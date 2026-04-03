@@ -15,6 +15,33 @@ This project builds an end-to-end **sales analytics** workflow using:
 - `scripts/` — Python pipeline scripts
 - `exports/` — CSV export used for dashboards (`sales_fact_denormalized.csv`)
 - `tableau/` — Tableau workbook and setup notes
+- 
+## 📊 Dashboard Preview
+
+Here are the visualizations created in Tableau from the exported data:
+
+### Monthly Revenue Trend
+![Monthly Revenue Trend](images/revenue.png)
+
+*Revenue shows seasonal patterns with peaks in mid-year months.*
+
+### Sales by Product Category
+![Sales by Category](images/sales_revenue.png)
+
+*Electronics category leads revenue generation at approximately $350K.*
+
+### Sales by Region
+![Sales by Region](images/region.png)
+
+*West and East regions contribute ~60% of total sales.*
+
+### Complete Dashboard
+![Dashboard Overview](images/dashboard.png)
+
+**Key Business Insights:**
+- Electronics is the top-performing category
+- West region shows highest sales across all categories
+- Revenue peaks in April-July period
 
 ## How the Data Flows
 
